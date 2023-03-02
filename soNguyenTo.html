@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+function isPrime(num) {
+    for (let i = 2 ; i*i <= num ; i ++){
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return  true;
+}
+let n = prompt("nhap vao");
+let count = 0;
+let num = 2;
+while ( count < n){
+    if(isPrime(num)){
+        document.writeln(num + "<br>");
+        count++;
+    }
+    num++;
+}
+</script>
+</body>
+</html>
